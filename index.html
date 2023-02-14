@@ -12,46 +12,234 @@
 <body>
     <main>
         <section>
-            <div class="container bg-green-200 p-2 lg:w-3/4 xs:w-fit mx-auto xs:m-0 my-12 ">
+            <div class="container  p-2 lg:w-3/4 xs:w-fit mx-auto xs:m-0 my-12 ">
                 <div class="">
-                    <div class="bg-red-200 md:flex md:justify-evenly  xs:flex-col  xs:w-fit mx-auto items-center">
+                    <div class="md:flex md:justify-evenly  xs:flex-col  xs:w-fit mx-auto items-center">
                         <div>
-                            <h1 class="text-3xl">Books Shop</h1>
+                            <h1 class="text-5xl">Book Shop</h1>
                         </div>
 
                         <div>
-                            <input type="text" class="p-2" placeholder="search for books">
+                            <input id="book-search-field" type="text" class="p-2 border" placeholder="Search for books">
+                            <button id="book-search" class="border border-black rounded-md border-3 px-5 py-3 ml-2 bg-slate-100 hover:bg-black hover:text-white hover:border-white    hover:font-medium 
+                               xs:mx-auto">Search</button>
+                        </div>
+
+                    </div>
+
+                    <div class="books-catogories md:mt-36 md:flex justify-around bg-gray-100 p-2">
+                        <div class="">
                             <button
-                                class="border border-black border-3 px-5 py-3 ml-2 bg-slate-100 hover:bg-black hover:text-white hover:border-white hover:border-2 
-                                hover:font-medium xs:mx-auto">Search</button>
+                                class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:font-medium" >Business</button>
                         </div>
+                        <div class="">
+                            <button
+                                class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:font-medium">Fiction</button>
+                        </div>
+                        <div class="">
+                            <button
+                                class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white  hover:font-medium">Self-help</button>
+                        </div>
+                        <div class="">
+                            <button
+                                class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white  hover:font-medium">Biography</button>
+                        </div>
+
 
                     </div>
 
-                    <div class="books-catogories md:my-36 md:flex justify-around bg-yellow-200 p-2">
-                        <div class="">
-                            <button class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Business</button>
-                        </div>
-                        <div class="">
-                            <button class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Fiction</button>
-                        </div>
-                        <div class="">
-                            <button class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Self-help</button>
-                        </div>
-                        <div class="">
-                            <button class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Biography</button>
-                        </div>
-                        
-
-                    </div>
-                    
 
                 </div>
             </div>
-            <div class="grid lg:grid-cols-2  bg-yellow-200 p-2 lg:w-3/4 lg:mx-auto">
-                <div class="bg-green-200">cart-1</div>
-                <div class="bg-green-100">cart-2</div>
-                
+            <div class="grid lg:grid-cols-5  bg-slate-50 p-2 lg:w-3/4 lg:mx-auto">
+                <div class=" p-2 col-span-3 ">
+                    <div class="grid lg:grid-cols-3   gap-3">
+                        <div class="book-card shadow-lg p-2 rounded-lg ">
+                            <div class="card-image md:w-20  flex justify-center ">
+                                <img class=" object-contain" src="images/sapiens_a_brief_history_of_humankind.jpg"
+                                    alt="">
+                            </div>
+                            <div class="card-body  ">
+                                <div>
+                                    <h1 class="mt-3 text-2xl"> SAPIENS: A BRIEF HISTORY OF HUMANKIND
+                                    </h1>
+                                    <h1 class="mt-2">-Yuval Noah Harari</h1>
+                                    <p class="mt-4 ">Beginning with this provocative concept, Sapiens takes place to
+                                        retell
+                                        the background of our types from a totally fresh perspective.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h5 class="price text-2xl mt-6"><span id="sapiens-price">948</span>/-</h5>
+                                </div>
+                                <div>
+                                    <input id="sapiens-field" class="p-2 my-2 border w-24 border-black " type="number"
+                                        placeholder="Quantity">
+                                    <button id="sapiens-btn"
+                                        class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card shadow-lg p-2  rounded-lg ">
+                            <div class="card-image md:w-20  flex justify-center ">
+                                <img class=" object-contain" src="images/meditation.jpg" alt="">
+                            </div>
+                            <div class="card-body  ">
+                                <div>
+                                    <h1 class="mt-3 text-2xl"> MEDITATIONS
+                                    </h1>
+                                    <h1 class="mt-2">- Marcus Aurelius</h1>
+                                    <p class="mt-4 ">.For anyone who struggles to reconcile the demands of leadership
+                                        with a concern for personal integrity and spiritual well-being, the Meditations
+                                        remains as relevant now as it was two thousand years ago.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h5 class="price text-2xl mt-6"><span id="meditation-price">316</span>/-</h5>
+                                </div>
+                                <div>
+                                    <input id="meditatio -field" class="p-2 my-2 border w-24 border-black "
+                                        type="number" placeholder="Quantity">
+                                    <button id="meditatio -btn"
+                                        class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card shadow-lg p-2  rounded-lg ">
+                            <div class="card-image md:w-20  flex justify-center ">
+                                <img class=" object-contain" src="images/mans_search_for_meaning.jpg" alt="">
+                            </div>
+                            <div class="card-body  ">
+                                <div>
+                                    <h1 class="mt-3 text-2xl"> MANS SEARCH FOR MEANING: THE CLASSIC TRIBUTE TO HOPE FROM
+                                        THE HOLOCAUST
+                                    </h1>
+                                    <h1 class="mt-2">- Viktor E Frankl</h1>
+                                    <p class="mt-4 "> A prominent Viennese psychiatrist before the war, Viktor Frankl
+                                        was uniquely able to observe the way that he and other inmates coped with the
+                                        experience of being in Auschwitz.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h5 class="price text-2xl mt-6"><span id="mans-search-price">474</span>/-</h5>
+                                </div>
+                                <div>
+                                    <input id="mans-search-field" class="p-2 my-2 border w-24 border-black "
+                                        type="number" placeholder="Quantity">
+                                    <button id="mans-search-btn"
+                                        class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card shadow-lg p-2  rounded-lg ">
+                            <div class="card-image md:w-20  flex justify-center ">
+                                <img class=" object-contain" src="images/why_nations_fail.jpg" alt="">
+                            </div>
+                            <div class="card-body  ">
+                                <div>
+                                    <h1 class="mt-3 text-2xl"> WHY NATIONS FAIL: THE ORIGINS OF POWER, PROSPERITY AND
+                                        POVERTY
+                                    </h1>
+                                    <h1 class="mt-2">-Daron Acemoglu , James A. Robinson</h1>
+                                    <p class="mt-4 ">You might anticipate it to be a bleak, numbing read. It's not. It's
+                                        bracing, garrulous, wildly ambitious, and also inevitably confident. It might,
+                                        in fact, be a little bit of a work of art. Daron Acemoglu and James A. Robinson,
+                                        2 energized, extensively revered advancement scholars, begin with a bit of
+                                        perspective:
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h5 class="price text-2xl mt-6"><span id="nations-fail-price">1106</span>/-</h5>
+                                </div>
+                                <div>
+                                    <input id="nations-fail-field" class="p-2 my-2 border w-24 border-black "
+                                        type="number" placeholder="Quantity">
+                                    <button id="nations-fail-btn"
+                                        class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card shadow-lg p-2  rounded-lg ">
+                            <div class="card-image md:w-20  flex justify-center ">
+                                <img class=" object-contain" src="images/an_ugly_truth.jpg" alt="">
+                            </div>
+                            <div class="card-body  ">
+                                <div>
+                                    <h1 class="mt-3 text-2xl"> AN UGLY TRUTH: INSIDE FACEBOOK'S BATTLE FOR DOMINATION
+                                    </h1>
+                                    <h1 class="mt-2">-Yuval Noah Harari</h1>
+                                    <p class="mt-4 ">It ends up that while the tech titan was connecting the world, they
+                                        were also mishandling users' information, allowing the spread of fake news, and
+                                        also the boosting of dangerous, polarising hate speech.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h5 class="price text-2xl mt-6"><span id="ugly-truth-price">1264</span>/-</h5>
+                                </div>
+                                <div>
+                                    <input id="ugly-truth-field" class="p-2 my-2 border w-24 border-black "
+                                        type="number" placeholder="Quantity">
+                                    <button id="ugly-truth-btn"
+                                        class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card shadow-lg p-2  rounded-lg ">
+                            <div class="card-image md:w-20  flex justify-center ">
+                                <img class=" object-contain" src="images/born_a_crime.jpg" alt="">
+                            </div>
+                            <div class="card-body  ">
+                                <div>
+                                    <h1 class="mt-3 text-2xl"> BORN A CRIME: STORIES FROM A SOUTH AFRICAN CHILDHOOD
+                                    </h1>
+                                    <h1 class="mt-2">-Trevor Noah</h1>
+                                    <p class="mt-4 ">It’s a story that begins with his mother throwing him from a moving
+                                        van to save him from a potentially fatal dispute with gangsters, then follows
+                                        the budding comedian’s path to self-discovery through episodes both poignant and
+                                        comical. Noah’s virtuoso embodiment of all the characters from his childhood
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h5 class="price text-2xl mt-6"><span id="born-crime-price">790</span>/-</h5>
+                                </div>
+                                <div>
+                                    <input id="born-crime-field" class="p-2 my-2 border w-24 border-black "
+                                        type="number" placeholder="Quantity">
+                                    <button id="born-crime-btn"
+                                        class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="bg-green-100 lg:border-black lg:border-l-2">
+                    <h1 class="text-center text-3xl">Order Items</h1>
+                </div>
+
             </div>
         </section>
     </main>
