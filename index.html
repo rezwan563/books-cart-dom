@@ -12,19 +12,46 @@
 <body>
     <main>
         <section>
-            <div class="container bg-green-200 p-2 w-3/4 xs:w-fit mx-auto xs:m-0 ">
+            <div class="container bg-green-200 p-2 lg:w-3/4 xs:w-fit mx-auto xs:m-0 my-12 ">
                 <div class="">
                     <div class="bg-red-200 md:flex md:justify-evenly  xs:flex-col  xs:w-fit mx-auto items-center">
                         <div>
                             <h1 class="text-3xl">Books Shop</h1>
                         </div>
-    
+
                         <div>
                             <input type="text" class="p-2" placeholder="search for books">
-                            <button class="border border-black border-3 px-5 py-3 ml-2 bg-slate-300 hover:bg-black hover:text-white hover:border-white hover:border-2 xs:mx-auto">Search</button>
+                            <button
+                                class="border border-black border-3 px-5 py-3 ml-2 bg-slate-100 hover:bg-black hover:text-white hover:border-white hover:border-2 
+                                hover:font-medium xs:mx-auto">Search</button>
                         </div>
+
                     </div>
+
+                    <div class="books-catogories md:my-36 md:flex justify-around bg-yellow-200 p-2">
+                        <div class="">
+                            <button class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Business</button>
+                        </div>
+                        <div class="">
+                            <button class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Fiction</button>
+                        </div>
+                        <div class="">
+                            <button class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Self-help</button>
+                        </div>
+                        <div class="">
+                            <button class="bg-slate-100 md:px-6 md:py-4  rounded-lg hover:bg-black hover:text-white hover:border-white hover:border-2 hover:font-medium">Biography</button>
+                        </div>
+                        
+
+                    </div>
+                    
+
                 </div>
+            </div>
+            <div class="grid lg:grid-cols-2  bg-yellow-200 p-2 lg:w-3/4 lg:mx-auto">
+                <div class="bg-green-200">cart-1</div>
+                <div class="bg-green-100">cart-2</div>
+                
             </div>
         </section>
     </main>
