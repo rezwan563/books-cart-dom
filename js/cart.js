@@ -27,6 +27,12 @@ function writeAddedItems(receiptText){
     
 }
 
+
+
+function writeTotalCost(){
+
+}
+
 // function removeFromCart(e){
 //     document.getElementById(e.).parentElement.
 
